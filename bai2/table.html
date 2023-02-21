@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(#00c9ff, #92fe9d);
+      }
+
+      /* form */
+      form {
+        background: #4bc0c8;
+        margin: 150px auto;
+        width: 500px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      form h2 {
+        text-align: center;
+        color: rgb(251, 251, 251);
+      }
+
+      form .fullname,
+      form .gmail,
+      form .phone,
+      form .password,
+      form .gender {
+        margin: 10px;
+      }
+      form .fullname input,
+      form .gmail input,
+      form .phone input,
+      form .password input {
+        margin-left: 200px;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      form .fullname input,
+      form .password input {
+        margin-left: 179px;
+      }
+      form .gender {
+        display: flex;
+      }
+      form .gender .options {
+        margin-left: 190px;
+      }
+      .gender .options label {
+        margin: 0 2px;
+      }
+
+      /* table */
+      .table {
+        margin: 0px auto;
+        width: 500px;
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      .table .term th {
+        padding: 20px;
+      }
+      .table td {
+        padding: 15px;
+      }
+      .table .accept input {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Form -->
+    <div class="wrap">
+      <form>
+        <h2>Register</h2>
+        <div class="fullname">
+          <label>Fullname </label>
+          <input type="text" placeholder="Enter fullname" />
+        </div>
+        <div class="gmail">
+          <label>Gmail </label>
+          <input type="text" placeholder="Enter gmail" />
+        </div>
+        <div class="phone">
+          <label>Phone </label>
+          <input type="text" placeholder="Enter phone number" />
+        </div>
+        <div class="password">
+          <label>Password </label>
+          <input type="text" placeholder="Enter password" />
+        </div>
+
+        <div class="gender">
+          <span>Gender: </span>
+          <div class="options">
+            <label>Male</label>
+            <input type="radio" />
+            <label>Female</label>
+            <input type="radio" />
+            <label>Other</label>
+            <input type="radio" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Table -->
+    <div class="table">
+      <table>
+        <tr class="term">
+          <th colspan="2">Term and Condidions</th>
+        </tr>
+
+        <tr>
+          <td>Benefit</td>
+          <td>
+            The Microsoft Software License Terms define the legal conditions
+            under which you can use your software. In the setup, select the
+            checkbox I accept the terms of this agreement to allow the continue
+            button
+          </td>
+        </tr>
+        <tr>
+          <td>Risk</td>
+          <td>
+            We want to provide you with the latest help in your own language, as
+            quickly as possible. This page is automatically translated and may
+            contain grammatical errors or inaccuracies. Our aim is to make this
+            content useful to you. Please let us know at the bottom of this page
+            if the information was helpful to you? Here is the article in
+            English for your reference easier.
+          </td>
+        </tr>
+        <tr class="accept">
+          <td colspan="2">
+            <label>Accept terms and condidions</label><input type="checkbox" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
